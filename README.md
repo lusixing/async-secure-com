@@ -1,5 +1,6 @@
 # async-secure-com
 用 python asyncio 异步编程实现的多用户加密即时通信工具，支持多用户群聊、文件上传下载
+
 加密方案采用128位X25519椭圆曲线DH密钥交换 + 128位AES-GCM对称加密。用asynccmd实现命令行交互
 
 运行服务器：
@@ -10,4 +11,22 @@
 
     python client_main.py -c client_config.json
     
+注册用户：
+
+    reg $username $password
     
+登陆：
+
+    login $username $password
+    
+发送文字消息：
+
+    send $message
+    
+上传文件：
+    
+    ul $filepath
+    
+下载文件
+
+    dl $filepath
