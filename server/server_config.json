@@ -1,0 +1,13 @@
+{
+    "db_path": "./user_data.db",
+    "host": "127.0.0.1",
+    "port": 61500,
+    "allow_registration": "True",
+    "allow_anonymous": "True",
+    "w_size": "True",
+    "default_admin_username": "admin",
+    "default_admin_password": "admin",
+    "allow_upload": "True",
+    "file_folder": "./files_temp/",
+    "max_connection": 100
+}
