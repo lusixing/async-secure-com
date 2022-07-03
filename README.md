@@ -1,32 +1,32 @@
 # async-secure-com
-用 python asyncio 异步编程实现的多用户加密即时通信工具，支持多用户群聊、文件上传下载
+ 
+ 
+Python asyncio implemented asynchronous multi-client communication tool, support group chat, file hosting and transfer.
 
-加密方案采用128位X25519椭圆曲线DH密钥交换 + 128位AES-GCM对称加密。用asynccmd实现命令行交互
+Encrypted with 128 bits x25519 elliptic curve with diffie hellman key exchange + 128 bits AES-GCM symmetric encryption.
 
-运行服务器：
+Enable cli interaction with asynccmd package.
 
+To install:
+    python install requirements.txt
+
+To run the server:
     python server_main.py -c server_config.json
     
-运行客户端：
-
+To run the client:
     python client_main.py -c client_config.json
     
-注册用户：
-
-    reg $username $password
+To register：
+    reg ${username} ${password}
     
-登陆：
-
-    login $username $password
+To login in:
+    login ${username} ${password}
     
-发送文字消息：
-
-    send $message
+To send text message:
+    send ${message}
     
-上传文件：
+To upload files:
+    ul ${filepath}
     
-    ul $filepath
-    
-下载文件
-
-    dl $filepath
+To download files:
+    dl ${filepath}
